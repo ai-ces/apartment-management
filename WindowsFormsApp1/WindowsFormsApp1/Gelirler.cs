@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Gelirler : Form
     {
-        public Form1()
+        public Gelirler()
         {
             InitializeComponent();
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new Gelirler().Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Giderler().Show();
         }
     }
 }
