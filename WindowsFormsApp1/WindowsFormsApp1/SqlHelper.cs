@@ -16,13 +16,13 @@ namespace WindowsFormsApp1
 
         public SqlHelper()
         {
-            Connection = new SqlConnection();
-            ConnectionString = @"Data Source =CES/SQLEXPRESS; Initial Catalog= apartment; Integrated Security=True";
+            ConnectionString = @"Data Source=CES\SQLEXPRESS; Initial Catalog= apartment; Integrated Security=True";
+            Connection = new SqlConnection(ConnectionString);
         }
 
         public void ExecuteProc(string procName, params SqlParameter[] ps)
         {
-            SqlCommand command = SqlCommand();
+            SqlCommand command = new SqlCommand();
             command.CommandType = System.Data.CommandType.StoredProcedure;
             command.CommandText = procName;
             command.Parameters.AddRange(ps);

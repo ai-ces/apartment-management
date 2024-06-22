@@ -188,6 +188,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Giderler";
             this.Text = "Giderler";
+            this.Load += new System.EventHandler(this.Giderler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
